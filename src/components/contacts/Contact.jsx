@@ -28,9 +28,9 @@ const Contact = () => {
               <article className='contact__option'>
                 <HiOutlineMail className='contact__option-icon' />
                 <h4>Email</h4>
-                <h5>dummy@gmail.com</h5>
+                <h5>sourabpaul2002@gmail.com</h5>
 
-                <a href="mailto:dummy@gmail.com" target='_blank'>Send a message</a>
+                <a href="mailto:sourabpaul2002@gmail.com" target='_blank'>Send a message</a>
 
               </article>
               <article className='contact__option'>

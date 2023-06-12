@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 import Me from '../../assets/me-av3.png'

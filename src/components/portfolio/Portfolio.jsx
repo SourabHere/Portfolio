@@ -1,19 +1,19 @@
 import React from 'react'
 import IMG2 from '../../assets/R4U.gif'
-import IMGCP from '../../assets/codepals.png'
-import IMG from '../../assets/me.png'
+import IMGCP from '../../assets/codePals.png'
+import IMG from '../../assets/port.gif'
 import IMGCC from '../../assets/jobs.jpg'
-import IMGCA from '../../assets/ChatApp.png'
+import IMGCA from '../../assets/chat.png'
 import IMGPA from '../../assets/price-assist.png'
 import IMGOH from '../../assets/Open-Source.png'
 import IMGIP from '../../assets/IM.png'
-import IMGR from '../../assets/rain.jpg'
+import IMGR from '../../assets/rain.png'
 import IMGED from '../../assets/emotion.png'
 import IMGFM from '../../assets/Facemask.png'
 import IMGP from '../../assets/product.png'
-import IMGAI from '../../assets/AI.jpg'
+import IMGAI from '../../assets/AI.png'
 import IMGW from '../../assets/weather.png'
-import IMGFD from '../../assets/fire.jpg'
+import IMGFD from '../../assets/fire.png'
 import IMGAS from '../../assets/AS.png'
 
 import './portfolio.css'
@@ -84,14 +84,14 @@ const data = [
     id: 1,
     image: IMGCP,
     title: 'CodePals',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    github: 'https://github.com/SourabHere/CodePals',
+    demo: 'https://codepales-full-stack.onrender.com/',
   },
   {
     id: 2,
     image: IMGCA,
     title: 'ChatApp',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Chat-App',
     demo: 'https://github.com/',
   },
   {
@@ -104,8 +104,8 @@ const data = [
   {
     id: 4,
     image: IMGOH,
-    title: 'OpenShourceHub',
-    github: 'https://github.com/',
+    title: 'OpenSourceHub',
+    github: 'https://github.com/SourabHere/OpenSourceHub',
     demo: 'https://github.com/',
   },
   
@@ -117,21 +117,21 @@ const data2 = [
     id: 1,
     image: IMG,
     title: 'Portfolio',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Portfolio',
     demo: 'https://github.com/',
   },
   {
     id: 2,
     image: IMGCC,
     title: 'CareerCrate',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    github: 'https://github.com/SourabHere/CareerCrate',
+    demo: 'https://careercrate.netlify.app/',
   },
   {
     id: 3,
     image: IMGW,
     title: 'Weather App',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Weather-App',
     demo: 'https://github.com/',
   }
 ]
@@ -141,21 +141,21 @@ const data3 = [
     id: 1,
     image: IMGPA,
     title: 'Price-Assist',
-    github: 'https://github.com/',
+    github: 'https://github.com/beastrun12j/Price-Assist',
     demo: 'https://github.com/',
   },
   {
     id: 2,
     image: IMGP,
     title: 'Product-API',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Rest-Api-Django',
     demo: 'https://github.com/',
   },
   {
     id: 3,
     image: IMGAI,
     title: 'AI-Operations',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/AI-website',
     demo: 'https://github.com/',
   }
 ]
@@ -165,14 +165,14 @@ const data4 = [
     id: 1,
     image: IMGIP,
     title: 'Image Processing App',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Image-Processing-App',
     demo: 'https://github.com/',
   },
   {
     id: 2,
     image: IMGFM,
     title: 'Face-Mask Detector',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Face_mask_detection',
     demo: 'https://github.com/',
   },
   {
@@ -193,7 +193,7 @@ const data4 = [
     id: 5,
     image: IMGR,
     title: 'Australian Rain EDA',
-    github: 'https://github.com/',
+    github: 'https://github.com/SourabHere/Australian-Rain-EDA',
     demo: 'https://github.com/',
   },
   {
@@ -237,15 +237,16 @@ const Portfolio = () => {
                 <article key={id} className='portfolio__item'>
                     <div className="portfolio__item-image">
 
-                      <img src={image} alt={title} />
+                      <img src={image} alt={title}/>
 
                     </div>
                     <h3>{title}</h3>
                     <div className="portfolio__item-cta">
-                      <a href={github} className='btn' target='_blank'>Github</a>
-                      <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                      <a href={github} className='btn btn-primary' target='_blank'>Github</a>
+                      {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
                     </div>
                 </article>
+                
               )
             })
           }
@@ -264,8 +265,8 @@ const Portfolio = () => {
                     </div>
                     <h3>{title}</h3>
                     <div className="portfolio__item-cta">
-                      <a href={github} className='btn' target='_blank'>Github</a>
-                      <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                      <a href={github} className='btn btn-primary' target='_blank'>Github</a>
+                      {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
                     </div>
                 </article>
               )
@@ -286,8 +287,8 @@ const Portfolio = () => {
                     </div>
                     <h3>{title}</h3>
                     <div className="portfolio__item-cta">
-                      <a href={github} className='btn' target='_blank'>Github</a>
-                      <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                      <a href={github} className='btn btn-primary' target='_blank'>Github</a>
+                      {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
                     </div>
                 </article>
               )
@@ -308,8 +309,8 @@ const Portfolio = () => {
                     </div>
                     <h3>{title}</h3>
                     <div className="portfolio__item-cta">
-                      <a href={github} className='btn' target='_blank'>Github</a>
-                      <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                      <a href={github} className='btn btn-primary' target='_blank'>Github</a>
+                      {/* <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a> */}
                     </div>
                 </article>
               )
